@@ -1,0 +1,835 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+/*---------- awal css navbar ------------*/
+nav{
+    position: sticky;
+    top: 0;
+    z-index: 2;
+}
+.navbar{
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    background-color: rgba(255, 255, 255, 0.938);
+    box-shadow: 0 0 5px 0 #333;
+    padding-bottom: 10px;
+}
+.icon-navbar {
+    margin-top: 10px;
+}
+.icon-navbar img{
+    border-radius: 5px;
+    padding: 2px 5px;
+    background-color: yellow;
+    border: 1px solid #333;
+    width: 25px;
+    /* height: 30px; */
+    box-shadow: 2px 2px 0 0 #333;
+    cursor: pointer;
+}
+.share-btn{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+.profile{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: sticky;
+    transition: transform 0.3s ease;
+    /* background-color: #007bff; */
+}
+
+.text-profile p{
+    margin-top: 10px;
+    font-size: 12px;
+    border: 1px solid #333;
+    border-radius: 4px;
+    padding: 1px;
+    text-align: center;
+    background-color: yellow;
+    box-shadow: 1px 2px 0 0 #333;
+
+}
+.logo{
+    margin-top: 2px;
+    z-index: 5;
+    align-items: center;
+    width: 120px;
+    height: auto;
+    transition: width 0.3s ease;
+    border: 2px solid #333;
+    border-radius: 700px;
+    background-color: yellow;
+}
+
+nav.sticky .logo {
+    width: 65px;
+}
+/*---------- akhir css navbar -----------*/
+p {
+    margin: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease, opacity 0.5s ease;
+}
+.span-about{
+    background-color: rgba(255, 255, 0, 0.527);
+    padding: 0 5px;
+}
+.span-about1{
+    background-color: rgb(255, 0, 0);
+    padding: 2px 5px;
+    color: #fff;
+    text-align: center;
+}
+p.hidden {
+    max-height: 0;
+    opacity: 0;
+}
+
+p.visible {
+    max-height: 500px; /* Adjust to accommodate content */
+    opacity: 1;
+}
+
+.btn-text {
+    display: inline-block;
+    margin-top: 5px;
+    padding: 5px 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+/*---------- awal css Tentang saya ------*/
+.about{
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    margin-top: 10px;
+    margin-bottom: 25px;
+    background-color: #ffff;
+    width: 90%;
+    height: 50%;
+    border-radius: 5px;
+}
+.about p{
+    margin-top: 10px;
+    text-align: justify;
+    line-height: 22px;
+}
+.text-about h6{
+    display: flex;
+    margin-top: 5px;
+    background-color:#007bff;
+    color: white;
+    text-align: center;
+    padding: 4px 10px;
+    border: 1px solid #333;
+    border-radius: 5px;
+    box-shadow: 0 2px 0 0 #333;
+}
+/*---------- akhir css Tentang saya ------*/
+
+/*---------- awal css Media sosial -------*/
+.medsos{
+    margin: 0 auto;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    background-color: rgba(255, 255, 0, 0.849);
+    width: 90%;
+    height: 200px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 0 0 #333;
+    border: 2px solid #333;
+}
+.text-medsos{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #007bff;
+}
+
+h5 {
+    margin-top: 10px;
+    background-color: #007bff;
+    color: white;
+    text-align: center;
+    padding: 4px 24px;
+    border: 2px solid #333;
+    border-radius: 5px;
+    box-shadow: 2px 2px 0 0 #333;
+}
+/*---------- akhir css Media sosial -------*/
+
+/*---------- awal css Layanan & jasa ------*/
+.text-service{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.service{
+    display: flex;
+    margin: 10px auto;
+    justify-content: space-between;
+    width: 85%;
+    align-items: center;
+    background-color: yellow;
+    padding: 5px 10px;
+    border-radius: 8px;
+    border: 2px solid #333;
+    box-shadow: 0 2px 0 0 #333;
+}
+.s1{
+    background-color: yellow;
+    border-radius: 5px;
+    padding: 5px 15px;
+    text-decoration: none;
+    box-shadow: 0 0 0 0 #333;
+}
+.s1 a{
+    text-decoration: none;
+    color: #333;
+}
+.show-btn{
+    background-color:#007bff;
+    border-radius: 5px;
+    padding: 5px 30px;
+    border: 1px solid #333;
+    box-shadow: 1px 1px 0 0 #333;
+    cursor: pointer;
+}
+.show-btn:hover{
+    background-color: red;
+    color: white;
+}
+/*---------- akhir css Layanan & jasa ------*/
+
+/*---------- awal css Q & A --------------*/
+.QandA {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.accordion-container {
+    max-width: 90%;
+    margin: 0 auto;
+    margin-top: 10px;
+    align-items: center;
+}
+.accordion {
+    margin-bottom: 10px;
+    border: 1px solid #333;
+    border-radius: 5px;
+    overflow: hidden;
+    background-color: #fff;
+    box-shadow: 0 2px 0 0 #333;
+}
+.accordion-header {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    text-align: left;
+    /* background-color: #007bff; */
+    background-color:  #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.accordion-header:hover {
+    /* background-color: #0056b3; */
+    background-color: yellow;
+    color: #333;
+}
+.accordion-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+    padding: 0 15px;
+}
+.accordion-content p {
+    padding: 15px 0;
+    margin: 0;
+}
+.icon {
+    transition: transform 0.3s ease;
+}
+.accordion-header.active .icon {
+    transform: rotate(180deg);
+}
+/*---------- akhir Q & A -------------------*/
+
+/*---------- awal css footer --------------*/
+footer{
+    background-color: white;
+    width: 100%;
+    height: 60px;
+    justify-content: center;
+    text-align: center;
+    box-shadow: 0 0 2px 0 #333;
+}
+.footer{
+    padding-top: 10px;
+}
+.footer p{
+    padding: 2px;
+}
+/*---------- akhir css footer --------------*/
+
+/*------- awal isi Layanan & jasa ----------*/
+.overlay {
+    position: fixed;
+    bottom: -110%;
+    left: 0;
+    width: 100%;
+    height: 80%;
+    background-color: rgb(255, 255, 255);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: bottom 0.5s ease-in-out;
+    z-index: 1000;
+    box-shadow: 0 0 5px 0 #333;
+}
+.overlay.active {
+    bottom: 0;
+}
+.content {
+    text-align: center;
+    background: white;
+    color: black;
+    padding: 0px;
+    border-radius: 5px;
+    width: 95%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    height: 95%;
+    overflow-y: auto;
+}
+.close-btn {
+    position: absolute;
+    align-items: center;
+    right: 5px;
+    top: 5px;
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    padding: 5px 10px;
+    box-shadow: 1px 2px 0 0 #333;
+    border: 2px solid #333;
+    cursor: pointer;
+}
+.close-btn:hover {
+    background-color: darkred;
+}
+/*------ akhir isi Layanan & jasa ----------*/
+
+/*------ background kuning -----------------*/
+.fitur-background {
+    flex: 1;
+    margin: 10px auto; /* posisi ditengah */
+    background-color: yellow;
+    padding: 0px;
+    border: 2px solid #333;
+    border-radius: 10px;
+    box-shadow: 2px 2px 0px 0px #333;
+    width: 95%;
+}
+/*------ background kuning -----------------*/
+
+/*------ Awal logo-logo icon ---------------*/
+.Edukasi-m {
+    display: flex;
+    padding: 10px;
+}
+.Edukasi-m h4 {
+    text-align: center;
+    background-color: #007bff;
+    color: white;
+    padding: 8px 20px;
+    margin: 0 auto;
+    border: 2px solid #333;
+    border-radius: 5px;
+    box-shadow: 0px 2px 0px 0px #333;
+    width: 220px;
+    height: 20px;
+    font-size: 18px;
+}
+/* gambar */
+.container {
+    margin: 0 auto;
+    padding: 5px 0;
+    /* background-color: #333; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.textapp {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px 20px;
+    /* background-color: #0056b3; */
+}
+  /* Card styling */
+.apalah {
+    position: relative;
+    display: inline-block;
+    /* background-color: #0066ec; */
+    border-radius: 8px;
+    color: #333;
+    border: 2px solid;
+    text-transform: uppercase;
+    cursor: pointer;
+    box-shadow: 0px 4px 0px 0px #333;
+    width: 70px;
+    height: 70px;
+    transition: transform 70ms, box-shadow 70ms;
+}
+.apalah:hover {
+    /* background-color: rgb(255, 0, 0); */
+    transform: translate(0px, 3px);
+    box-shadow:  0px 2px #333;
+}
+.apalah img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.header {
+    flex-direction: column;
+    align-items: center;
+    color: #333;
+    text-align: center;
+    width: 70px;
+    font-size: 10px;
+    padding: 10px 2px;
+    /* background-color: #ec1c00; */
+    }
+    .header-free{
+        flex-direction: column;
+        align-items: center;
+        color: #333;
+        text-align: center;
+        font-size: 10px;
+        padding: 10px 2px;
+    }
+a {
+    text-align: center;
+    text-decoration: none;
+    color: inherit;
+
+}  
+.button-style {
+    background-color: transparent;
+    margin: 0;
+    border: none;
+}
+/*------ Akhir logo-logo icon ---------------*/
+
+/* Popup styles */
+.popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.5);
+    z-index: 5;
+    animation: popupAnimation 0.5s forwards;
+}
+.popup h3 {
+    margin: 0 0 10px;
+    font-size: 18px;
+    text-align: center;
+}
+.popup p {
+    margin: 0;
+    text-align: center;
+}
+.popup-close {
+    margin-top: 10px;
+    display: block;
+    text-align: center;
+    background-color: red;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.popup-close:hover {
+    background-color: darkred;
+}
+@keyframes popupAnimation {
+    from {
+        transform: translate(-50%, -50%) scale(0.5);
+        opacity: 0;
+    }
+    to {
+        transform: translate(-50%, -50%) scale(1);
+        opacity: 1;
+    }
+}
+
+/* design isi pop up konten */
+.custom-div {
+    width: 220px;
+    margin: 20px auto;
+    padding: 5px 30px;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+    position: relative;
+}
+.custom-div p{
+    font-size: 13px;
+    padding-top: 2px;
+}
+.text-custom-div{
+padding-bottom: 6px;
+}
+
+.image-tai {
+display: flex;
+justify-content: center;
+}
+img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+.btn {
+    display: block;
+    width: 100%;
+    margin: 10px 0;
+    padding: 7px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s;
+    font-size: 13px;
+    z-index: 10; /* Pastikan tombol berada di atas */
+}
+.btn:hover {
+    background-color: #0056b3;
+}
+.exit-btn {
+    background-color: red;
+}
+.exit-btn:hover {
+    background-color: darkred;
+}
+
+.link-container {
+    display: flex;
+    align-items: center;
+}
+.link-box {
+    flex: 1;
+    padding: 4px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    background-color: #f9f9f9;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    font-size: 10px;
+}
+.copy-btn {
+    margin-left: 10px;
+    padding: 4px 5px;
+    border: none;
+    border-radius: 3px;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-size: 10px;
+}
+.copy-btn:hover {
+    background-color: #0056b3;
+}
+.custom-div p {
+    text-align: center;
+    /* margin-bottom: 5px; bug blur saat menekan copy link*/
+}
+
+/* Style untuk pesan berhasil disalin */
+.info-message {
+    display: none;
+    width: 50%;
+    font-size: 10px;
+    margin-top: 35px;
+    padding: 5px;
+    background-color: #28a745;
+    color: white;
+    border-radius: 3px;
+    text-align: center;
+    align-items: center;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    z-index: 5; /* Pastikan pesan berada di bawah tombol */
+}
+
+/* Animasi untuk popup muncul */
+@keyframes popupAnimation {
+    0% {
+        transform: translateX(-50%) translateY(-50%) scale(0.5);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(-50%) translateY(-50%) scale(1);
+        opacity: 1;
+    }
+}
+
+/* Animasi untuk fade keluar */
+@keyframes fadeOutAnimation {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+.close-btn2 {
+    position: relative;
+    align-items: center;
+    left: 260px;
+    bottom: 358px;
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    padding: 5px 9px;
+    box-shadow: 1px 2px 0 0 #333;
+    border: 2px solid #333;
+    cursor: pointer;
+    font-size: 13px;
+}
+
+/* Responsive styles */
+
+/* Smarphone (potret) */
+@media only screen and (max-width: 2134px) {
+    .textapp{
+        gap: 10px 30px;
+    }
+    .apalah{
+        width: 100px;
+        height: 100px;
+    }
+    .fitur-background{
+        width: 60%;
+    }
+    .header{
+        font-size: 15px;
+        padding: 12px 2px;
+        width: 100px;
+    }
+    .header-free{
+        font-size: 15px;
+        width: 120px;
+    }
+    .service{
+        width: 50%;
+    }
+    .accordion-container{
+        width: 51%;
+    }
+}
+@media only screen and (max-width: 1600px) {
+    .textapp{
+        gap: 10px 30px;
+    }
+    .apalah{
+        width: 100px;
+        height: 100px;
+    }
+    .fitur-background{
+        width: 70%;
+    }
+    .header{
+        font-size: 15px;
+        padding: 12px 2px;
+        width: 100px;
+    }
+    .header-free{
+        font-size: 15px;
+        width: 120px;
+    }
+    .service{
+        width: 50%;
+    }
+    .accordion-container{
+        width: 52%;
+    }
+}
+@media only screen and (max-width: 1280px) {
+    .textapp{
+        gap: 20px 30px;
+    }
+    .apalah{
+        width: 100px;
+        height: 100px;
+    }
+    .fitur-background{
+        width: 80%;
+    }
+    .header{
+        font-size: 14px;
+        padding: 10px 2px;
+        width: 100px;
+    }
+    .header-free{
+        font-size: 12px;
+        width: 100px;
+    }
+    .service{
+        width: 78%;
+    }
+    .accordion-container{
+        width: 81%;
+    }
+}
+@media only screen and (max-width: 900px) {
+    .textapp{
+        gap: 10px 30px;
+    }
+    .apalah{
+        width: 90px;
+        height: 90px;
+    }
+    .fitur-background{
+        width: 85%;
+    }
+    .header{
+        font-size: 13px;
+        padding: 12px 2px;
+        width: 90px;
+    }
+    .header-free{
+        font-size: 13px;
+        width: 100px;
+    }
+    .service{
+        width: 81%;
+    }
+    .accordion-container{
+        width: 85%;
+    }
+}
+@media only screen and (max-width: 768px) {
+    .textapp{
+        gap: 10px 20px;
+    }
+    .apalah{
+        width: 80px;
+        height: 80px;
+    }
+    .fitur-background{
+        width: 88%;
+    }
+    .header{
+        font-size: 12px;
+        padding: 12px 2px;
+        width: 80px;
+    }
+    .header-free{
+        font-size: 12px;
+        width: 100px;
+    }
+    .service{
+        width: 85%;
+    }
+    .accordion-container{
+        width: 88%;
+    }
+}
+@media only screen and (max-width: 640px) {
+    .textapp{
+        gap: 5px 10px;
+    }
+    .apalah{
+        width: 70px;
+        height: 70px;
+    }
+    .fitur-background{
+        width: 95%;
+    }
+    .header{
+        font-size: 10px;
+        padding: 10px 2px;
+        width: 70px;
+    }
+    .header-free{
+        font-size: 10px;
+        width: 80px;
+    }
+    .service{
+        width: 85%;
+    }
+    .accordion-container{
+        width: 100%;
+    }
+
+}
+@media only screen and (max-width: 390px) {
+    .apalah{
+        width: 60px;
+        height: 60px;
+    }
+    .textapp{
+        gap: 5px 10px;
+    }
+    .fitur-background{
+        width: 95%;
+    }
+    .header{
+        font-size: 9px;
+        padding: 10px 2px;
+        width: 60px;
+    }
+    .header-free{
+        font-size: 9px;
+        padding: 10px 2px;
+        width: 70px;
+    }
+    .service{
+        width: 85%;
+    }
+    .accordion-container{
+        width: 100%;
+    }
+    
+}
+
+
